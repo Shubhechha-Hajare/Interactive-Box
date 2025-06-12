@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Product Boxes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Bundle & Save</h2>
+
+    <div class="box" onclick="toggleBox(this)">
+  <div class="box-header">
+    <input type="radio" name="bundle" />
+    <div class="box-info">
+      <div class="pair">1 Pair</div>
+      <div class="price">DKK 195.00</div>
+    </div>
+    <span class="offer">50% OFF</span>
+  </div>
+  <div class="box-content">
+    <div class="dropdown-header">
+    <span>Size</span>
+    <span>Color</span>
+  </div>
+
+    <label>
+      <select><option>S</option><option>M</option><option>L</option></select>
+      <select><option>Color</option><option>Red</option><option>Blue</option></select>
+    </label>
+    <label>
+      <select><option>S</option><option>M</option><option>L</option></select>
+      <select><option>Color</option><option>Red</option><option>Blue</option></select>
+    </label>
+  </div>
+</div>
+
+<!-- Repeat for 2 Pair -->
+<div class="box" onclick="toggleBox(this)">
+  <div class="box-header">
+    <input type="radio" name="bundle" />
+    <div class="box-info">
+      <div class="pair">2 Pair</div>
+      <div class="price">DKK 345.00</div>
+    </div>
+    <span class="popular">Most Popular <br> 40% OFF</span>
+  </div>
+  <div class="box-content">
+     <div class="dropdown-header">
+    <span>Size</span>
+    <span>Color</span>
+  </div>
+
+    <label>
+      <select><option>S</option><option>M</option><option>L</option></select>
+      <select><option>Color</option><option>Red</option><option>Blue</option></select>
+    </label>
+    <label>
+      <select><option>S</option><option>M</option><option>L</option></select>
+      <select><option>Color</option><option>Red</option><option>Blue</option></select>
+    </label>
+  </div>
+</div>
+
+    
+  
+<!-- Repeat for 3 Pair -->
+<div class="box" onclick="toggleBox(this)">
+  <div class="box-header">
+    <input type="radio" name="bundle" />
+    <div class="box-info">
+      <div class="pair">3 Pair</div>
+      <div class="price">DKK 528.00</div>
+    </div>
+    <span class="offer">60% OFF</span>
+  </div>
+  <div class="box-content">
+     <div class="dropdown-header">
+    <span>Size</span>
+    <span>Color</span>
+  </div>
+
+    <label>
+      <select><option>S</option><option>M</option><option>L</option></select>
+      <select><option>Color</option><option>Red</option><option>Blue</option></select>
+    </label>
+    <label>
+      <select><option>S</option><option>M</option><option>L</option></select>
+      <select><option>Color</option><option>Red</option><option>Blue</option></select>
+    </label>
+  </div>
+</div>
+
+     
+<div class="summary">
+  <div class="shipping">Free 2 Day Shipping</div>
+  <div class="total">Total DKK 360.00</div>
+</div>
+
+    <button class="add-to-cart">+ Add to Cart</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

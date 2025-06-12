@@ -1,0 +1,138 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 400px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #2b7a4b;
+  margin-bottom: 20px;
+}
+
+.box {
+  border: 2px solid #ccc;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  background-color: #fff;
+  overflow: hidden;
+  height: 80px;      /* Initial height */
+  width: 100%;       /* Full width */
+  box-sizing: border-box;
+}
+
+.box.active {
+  border-color: #2b7a4b;
+  background-color: #f0fdf4;
+  height:187px;    /* Expanded square */
+   width: 400px;     
+  margin: 0 auto 20px;  
+}
+
+.box-header {
+  display: flex;
+  justify-content: flex-start; /* align items left */
+  align-items: center;
+  gap: 20px;
+}
+
+.box-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: -10px; /* shift left slightly */
+}
+
+.pair {
+  font-weight: bold;
+}
+
+.price {
+  font-size: 14px;
+  color: #444;
+  margin-top: 2px;
+  font-weight: bold;
+}
+
+.box-content {
+  display: none;
+  margin-top: 10px;
+  flex-direction: column;
+  gap: 12px;
+  margin-left: 8%;
+}
+
+.box-content label {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  width:40%;
+}
+
+.box-content label select {
+  flex: 1;
+}
+.offer {
+  color: black;
+  font-weight: bold;
+  margin-left: 40%;
+}
+
+.popular {
+  color:  black;
+  font-weight: bold;
+  margin-left: 38%;
+}
+
+.add-to-cart {
+  background-color: #2b7a4b;
+  color: white;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.dropdown-header {
+   display: flex; 
+   gap: 47px;
+  /* justify-content: space-between; */
+  /* font-weight: bold; */
+  /* padding: 10px; */
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #333;
+}
+.summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.shipping {
+  color: green;
+  /* font-weight: bold; */
+  font-size: 14px;
+}
+
+.total {
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+}
